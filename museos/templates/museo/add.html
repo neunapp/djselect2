@@ -1,0 +1,15 @@
+{% extends "museo/base_museo.html" %}
+
+{% load  static %}
+
+{% block content %}
+
+
+  <h1>Registrar Museo</h1>
+  <form method="post">{% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Registrar</button>
+  </form>
+
+
+{% endblock content %}
